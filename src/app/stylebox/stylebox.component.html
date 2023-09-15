@@ -1,0 +1,8 @@
+<div id="sbox">
+    <div id="scolor" >
+        Theme <input type="color" [(ngModel)]="bcolor" (change)="changeColor()">
+    </div>
+    <div id="text" [style.fontFamily]="font" (click)="changeFont(font)">
+        {{ font }} !!! 
+    </div>
+</div>

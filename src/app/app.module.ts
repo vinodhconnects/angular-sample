@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CircleComponent } from './circle/circle.component';
+import { StyleboxComponent } from './stylebox/stylebox.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CircleComponent //component,directives and pipes
+    CircleComponent,
+    StyleboxComponent //component,directives and pipes
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule //inlude third party modules or any user defined module
+    AppRoutingModule, //inlude third party modules or any user defined module
+    FormsModule
   ],
   providers: [],//services
   bootstrap: [AppComponent]//components that can be called in index.html

@@ -1,9 +1,9 @@
-<h1> {{ title }}</h1>
+<div id="header" [ngStyle]="ss.getStyleInfo()">
+   <h1> {{ title }}</h1>
+   <ul id="menu">
+      <li *ngFor="let x of menuitems">{{x}}</li>
+   </ul>
+</div>
+<app-stylebox></app-stylebox>
+<app-circle *ngFor="let y of [0,1,2,3,4,5]"></app-circle>
 
-<app-circle></app-circle>
-<app-circle></app-circle>
-<app-circle></app-circle>
-<app-circle></app-circle>
-<app-circle></app-circle>
-<app-circle></app-circle>
-<app-circle></app-circle>

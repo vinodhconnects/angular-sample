@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StyleService } from './services/style.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sterling APP';
+  menuitems=["Home","About us","Projects","Achievements","Reach us"]
+
+  constructor(public ss:StyleService) {
+         
+  }
 }
