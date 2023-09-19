@@ -1,0 +1,23 @@
+#window {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.7;
+    position: fixed;
+    top:0px;
+    left: 0px;
+}
+#window-box{
+    height:300px;
+    width: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 40%;
+    top: 30%;
+    background-color: white;
+    box-shadow: 5px 5px 20px whitesmoke;
+    font-family: impact;
+    font-size: 25px;
+}

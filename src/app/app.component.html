@@ -5,5 +5,14 @@
    </ul>
 </div>
 <app-stylebox></app-stylebox>
-<app-circle *ngFor="let y of [0,1,2,3,4,5]"></app-circle>
+<div id="services">
+<app-circle *ngFor="let y of sitems;let z=index" 
+[title]="y" 
+[image]="simages[z]"
+(itemclicked)="receiveInfo($event)"
+></app-circle>
+</div>
+<app-mwindow [message]="smessage"
+ *ngIf="wvisibility"
+></app-mwindow>
 

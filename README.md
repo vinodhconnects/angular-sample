@@ -101,3 +101,21 @@ Input Output Directive
   initially the text box will get filled with Mumbai
 
   suppose if erase and type Chennai, the city variable will be updated to Chennai
+
+  ### Parent Child Communication
+
+  If a parent sends data to child, The configuration
+  must be always done in child and in this case child is a receiver
+
+
+  If a child sends data to parent [Should be avoided], The
+  configuraation must be always done in child and in case child
+  is a sender
+
+  if a child variable is a receiver we need to decorate
+  it with @Input and thar variable will become input
+  directive for the child component
+
+  if a child variable is a sender we need to decorate it
+  with @Output and that variable will become output directive
+  for the child component

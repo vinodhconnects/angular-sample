@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CircleComponent } from './circle/circle.component';
 import { StyleboxComponent } from './stylebox/stylebox.component';
 import { FormsModule } from '@angular/forms';
+import { MwindowComponent } from './mwindow/mwindow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CircleComponent,
-    StyleboxComponent //component,directives and pipes
+    StyleboxComponent,
+    MwindowComponent //component,directives and pipes
   ],
   imports: [
     BrowserModule,
